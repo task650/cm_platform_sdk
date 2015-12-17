@@ -40,6 +40,7 @@ public class QSConstants {
     public static final String TILE_PERFORMANCE = "performance";
     public static final String TILE_ADB_NETWORK = "adb_network";
     public static final String TILE_NFC = "nfc";
+    public static final String TILE_POWER_MENU = "power_menu";
     public static final String TILE_COMPASS = "compass";
     public static final String TILE_LOCKSCREEN = "lockscreen";
     public static final String TILE_LTE = "lte";
@@ -86,6 +87,7 @@ public class QSConstants {
 //        STATIC_TILES_AVAILABLE.add(TILE_PERFORMANCE);
         STATIC_TILES_AVAILABLE.add(TILE_ADB_NETWORK);
         STATIC_TILES_AVAILABLE.add(TILE_NFC);
+        STATIC_TILES_AVAILABLE.add(TILE_POWER_MENU);
         STATIC_TILES_AVAILABLE.add(TILE_COMPASS);
 //        STATIC_TILES_AVAILABLE.add(TILE_LOCKSCREEN);
 //        STATIC_TILES_AVAILABLE.add(TILE_LTE);
