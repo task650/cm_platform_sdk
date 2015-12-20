@@ -38,6 +38,7 @@ public class QSConstants {
     public static final String TILE_APN = "apn";
     public static final String TILE_PROFILES = "profiles";
     public static final String TILE_PERFORMANCE = "performance";
+    public static final String TILE_SLEEPSCREEN = "sleepscreen";
     public static final String TILE_SCREENRECORD = "screenrecord";
     public static final String TILE_SCREENSHOT = "screenshot";
     public static final String TILE_ADB_NETWORK = "adb_network";
@@ -89,6 +90,7 @@ public class QSConstants {
         STATIC_TILES_AVAILABLE.add(TILE_ADB_NETWORK);
         STATIC_TILES_AVAILABLE.add(TILE_NFC);
         STATIC_TILES_AVAILABLE.add(TILE_POWER_MENU);
+        STATIC_TILES_AVAILABLE.add(TILE_SLEEPSCREEN);
         STATIC_TILES_AVAILABLE.add(TILE_SCREENRECORD);
         STATIC_TILES_AVAILABLE.add(TILE_SCREENSHOT);
         STATIC_TILES_AVAILABLE.add(TILE_COMPASS);
