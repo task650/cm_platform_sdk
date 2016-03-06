@@ -1762,6 +1762,16 @@ public final class CMSettings {
                 sBooleanValidator;
 
         /**
+         * Whether or not to ignore the notification slider when zen is in auto mode
+         */
+        public static final String NOTIFICATION_SLIDER_IGNORE_AUTO =
+                "notification_slider_ignore_auto";
+
+        /** @hide */
+        public static final Validator NOTIFICATION_SLIDER_IGNORE_AUTO_VALIDATOR =
+                sBooleanValidator;
+
+        /**
          * I can haz more bukkits
          * @hide
          */
@@ -1867,6 +1877,7 @@ public final class CMSettings {
                 CMSettings.System.HEADSET_CONNECT_PLAYER,
                 CMSettings.System.ZEN_ALLOW_LIGHTS,
                 CMSettings.System.TOUCHSCREEN_GESTURE_HAPTIC_FEEDBACK,
+                CMSettings.System.NOTIFICATION_SLIDER_IGNORE_AUTO,
         };
 
         /**
@@ -2016,6 +2027,8 @@ public final class CMSettings {
             VALIDATORS.put(ZEN_PRIORITY_ALLOW_LIGHTS, ZEN_PRIORITY_ALLOW_LIGHTS_VALIDATOR);
             VALIDATORS.put(TOUCHSCREEN_GESTURE_HAPTIC_FEEDBACK,
                     TOUCHSCREEN_GESTURE_HAPTIC_FEEDBACK_VALIDATOR);
+            VALIDATORS.put(NOTIFICATION_SLIDER_IGNORE_AUTO,
+                    NOTIFICATION_SLIDER_IGNORE_AUTO_VALIDATOR);
             VALIDATORS.put(__MAGICAL_TEST_PASSING_ENABLER,
                     __MAGICAL_TEST_PASSING_ENABLER_VALIDATOR);
         };
