@@ -2836,6 +2836,11 @@ public final class CMSettings {
          */
         public static final String LOCK_SCREEN_BLUR_ENABLED = "lock_screen_blur_enabled";
 
+        /**
+         * Allows setting the radius for lockscreen blur
+         * @hide
+         */
+        public static final String LOCKSCREEN_BLUR_RADIUS = "lockscreen_blur_radius";
 
         // endregion
 
