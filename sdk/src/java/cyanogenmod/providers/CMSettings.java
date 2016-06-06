@@ -2853,6 +2853,12 @@ public final class CMSettings {
          */
         public static final String LOCKSCREEN_BLUR_RADIUS = "lockscreen_blur_radius";
 
+        /**
+         * Whether to display weather information on the lock screen
+         * @hide
+         */
+        public static final String LOCK_SCREEN_WEATHER_ENABLED = "lock_screen_weather_enabled";
+
         // endregion
 
         /**
