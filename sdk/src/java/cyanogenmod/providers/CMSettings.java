@@ -1854,6 +1854,31 @@ public final class CMSettings {
                 sBooleanValidator;
 
         /**
+         * The current custom picture adjustment values as a delimited string
+         */
+        public static final String DISPLAY_PICTURE_ADJUSTMENT =
+                "display_picture_adjustment";
+
+        /** @hide */
+        public static final Validator DISPLAY_PICTURE_ADJUSTMENT_VALIDATOR =
+                new Validator() {
+                    @Override
+                    public boolean validate(String value) {
+                        if (TextUtils.isEmpty(value)) {
+                            return true;
+                        }
+                        final String[] sp = TextUtils.split(value, ",");
+                        for (String s : sp) {
+                            final String[] sp2 = TextUtils.split(s, ":");
+                            if (sp2.length != 2) {
+                                return false;
+                            }
+                        }
+                        return true;
+                    }
+                };
+
+        /**
          * Whether or not to ignore the notification slider when zen is in auto mode
          */
         public static final String NOTIFICATION_SLIDER_IGNORE_AUTO =
@@ -2135,6 +2160,8 @@ public final class CMSettings {
             VALIDATORS.put(ZEN_PRIORITY_ALLOW_LIGHTS, ZEN_PRIORITY_ALLOW_LIGHTS_VALIDATOR);
             VALIDATORS.put(TOUCHSCREEN_GESTURE_HAPTIC_FEEDBACK,
                     TOUCHSCREEN_GESTURE_HAPTIC_FEEDBACK_VALIDATOR);
+            VALIDATORS.put(DISPLAY_PICTURE_ADJUSTMENT,
+                    DISPLAY_PICTURE_ADJUSTMENT_VALIDATOR);
             VALIDATORS.put(NOTIFICATION_SLIDER_IGNORE_AUTO,
                     NOTIFICATION_SLIDER_IGNORE_AUTO_VALIDATOR);
             VALIDATORS.put(__MAGICAL_TEST_PASSING_ENABLER,
