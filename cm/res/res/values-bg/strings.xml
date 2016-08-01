@@ -178,11 +178,8 @@
   <string name="permlab_observe_audio_sessions">преглед на промените в аудио сесии</string>
   <string name="permdesc_observe_audio_sessions">Позволява на приложение да наблюдава създаване и унищожаване на аудио потоци.</string>
   <!-- CMAudioService - observe session changes permission -->
-<<<<<<< HEAD
   <string name="permlab_manage_audio_sessions">управление на промените в аудио сесии</string>
   <string name="permdesc_manage_audio_sessions">Разрешава на приложението да изпраща известия за аудио стрийминг актуализации.</string>
-=======
->>>>>>> fe98f907159e9f18bee30c654bdfc2c800624e4f
   <!-- QuickSettings: Themes tile -->
   <string name="qs_themes_label">Теми</string>
   <string name="qs_themes_content_description">Персонализирайте вашата тема</string>
