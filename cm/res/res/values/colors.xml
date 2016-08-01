@@ -18,6 +18,7 @@
     <color name="white">#ffffff</color>
     <color name="black">#000000</color>
     <color name="cm_cyan">#2baae2</color>
+    <color name="aokp_pink">#e4418b</color>
 
     <!-- Boot dexopt layout -->
     <color name="dexopt_background">@color/black</color>
@@ -25,6 +26,6 @@
     <color name="dexopt_text_primary">#deffffff</color>
     <color name="dexopt_text_secondary">#8affffff</color>
     <color name="dexopt_logo">#212121</color>
-    <color name="dexopt_device_bg">@color/cm_cyan</color>
+    <color name="dexopt_device_bg">@color/aokp_pink</color>
     <color name="dexopt_obscured_bg">#757575</color>
 </resources>
